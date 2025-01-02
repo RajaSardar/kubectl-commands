@@ -1,8 +1,10 @@
 # Useful Kubectl Commands
 
 ## Basic Commands
-- **Get Context**
-  - `kubectl config get-contexts` - List all available contexts.
+- **Context**
+  - `kubectl config get-contexts` - List all available contexts in your kubeconfig file.
+  - `kubectl config get-contexts my-context` - Describe one context in your kubeconfig file.
+  - `kubectl config use-context minikube` - Use the context for the minikube cluster.
 - **Get Resources**
   - `kubectl get pods` - List all pods in the current namespace.
   - `kubectl get services` - List all services in the current namespace.
